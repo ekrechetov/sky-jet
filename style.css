@@ -1,0 +1,996 @@
+.skyjet {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: var(--shada);
+  position: sticky;
+  padding: 8px;
+  top: 0;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  text-decoration: none;
+  width: 170px;
+  height: 42px;
+  object-fit: contain;
+  order: 1; 
+}
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 3;
+  margin: 12px auto 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 14px;
+  transition: color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin-left: 6px;
+  margin-right: 6px;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #4654f0;
+  text-decoration: underline;
+}
+
+.phone-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 6px;
+  max-height: 34px;
+  background-color: #333b8c;
+  box-shadow: var(--shada);
+  border-radius: 5px;
+  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  order: 2;
+}
+
+.skyjet .button-text {
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  margin-left: 2px;
+}
+
+.skyjet .frame {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* align-items: flex-start; */
+  justify-content: center;
+  gap: 40px;
+  padding: 0px 60px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.skyjet .truck-skyjet {
+  position: absolute;
+  top: -11.1111vh;
+  right: 0;
+  width: 83vh;
+  height: 117.1111vh;
+  aspect-ratio: 0.92;
+  object-fit: cover;
+}
+
+.skyjet .text-wrapper {
+  position: relative;
+  width: 707px;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 60px;
+  letter-spacing: -3px;
+  line-height: normal;
+}
+
+.skyjet .div {
+  position: relative;
+  width: 793px;
+  margin-left: -1px;
+  -webkit-text-stroke: 0.5px #000000;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 26.6px;
+}
+
+/* .skyjet .button {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  width: 230px;
+  align-items: center;
+  padding: 16px 18px;
+  background-color: #333b8c;
+  box-shadow: var(--shada);
+  justify-content: center;
+  gap: 14px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 5px;
+  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button:hover {
+  background-color: #5664EE;
+} */
+
+.skyjet .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+a.phone-button:hover {
+  background-color: #5664EE;
+}
+
+.skyjet .frame-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 130px 60px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.skyjet .text-wrapper-3 {
+  width: 639px;
+  margin-top: -1px;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 60px;
+  letter-spacing: -3px;
+  position: relative;
+  line-height: normal;
+}
+
+.skyjet .frame-3 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.skyjet .p {
+  position: relative;
+  width: 622px;
+  margin-top: -1px;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.skyjet .SKYJET {
+  width: 622px;
+  -webkit-text-stroke: 0.5px #000000;
+  color: #000000;
+  position: relative;
+  margin-left: -1px;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.skyjet .group {
+  position: absolute;
+  top: calc(50.00% - 272px);
+  right: 0;
+  width: 382px;
+  height: 544px;
+}
+
+.skyjet .union {
+  position: absolute;
+  top: calc(50.00% - 272px);
+  right: 0;
+  width: 99px;
+  height: 544px;
+}
+
+.skyjet .img {
+  position: absolute;
+  top: calc(50.00% - 272px);
+  right: 60px;
+  width: 198px;
+  height: 544px;
+}
+
+.skyjet .frame-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 130px 60px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.skyjet .text-wrapper-4 {
+  width: 716px;
+  margin-left: -1px;
+  -webkit-text-stroke: 0.5px #000000;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  position: relative;
+  line-height: normal;
+}
+
+.skyjet .frame-5 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px 40px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.skyjet .view {
+  width: 44.4444vw;
+  height: 226px;
+  gap: 24px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: var(--shada);
+  transition: top 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.view:hover {
+  top: -5px;
+}
+
+
+.skyjet .union-2 {
+  position: relative;
+  align-self: stretch;
+  aspect-ratio: 1.11;
+  object-fit: cover;
+}
+
+.skyjet .frame-6 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.skyjet .frame-7 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.skyjet .text-wrapper-5 {
+  width: 336px;
+  margin-top: -1px;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  position: relative;
+  line-height: normal;
+}
+
+.skyjet .text-wrapper-6 {
+  width: 313px;
+  margin-left: -1px;
+  -webkit-text-stroke: 0.5px #000000;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  position: relative;
+  line-height: normal;
+}
+
+.skyjet .view-2 {
+  width: 28.7vw;
+  height: 226px;
+  justify-content: center;
+  gap: 40px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: var(--shada);
+  transition: top 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.view-2:hover {
+  top: -5px;
+}
+
+.skyjet .vector {
+  position: relative;
+  width: 105px;
+  height: 105px;
+  aspect-ratio: 1;
+}
+
+.skyjet .text-wrapper-7 {
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  white-space: nowrap;
+  position: relative;
+  line-height: normal;
+}
+
+.skyjet .text-wrapper-8 {
+  width: fit-content;
+  margin-left: -1px;
+  -webkit-text-stroke: 0.5px #000000;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  white-space: nowrap;
+  position: relative;
+  line-height: normal;
+}
+
+.skyjet .vector-2 {
+  position: relative;
+  width: 87px;
+  height: 105px;
+  aspect-ratio: 0.83;
+}
+
+.skyjet .vector-3 {
+  position: relative;
+  width: 99px;
+  height: 105px;
+  aspect-ratio: 0.95;
+}
+
+.skyjet .vector-4 {
+  position: relative;
+  width: 105px;
+  height: 84px;
+  aspect-ratio: 1.25;
+}
+
+.skyjet .text-wrapper-9 {
+  width: fit-content;
+  margin-left: -1px;
+  -webkit-text-stroke: 0.5px #000000;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  position: relative;
+  line-height: normal;
+}
+
+.skyjet .view-3 {
+  gap: 60px;
+  padding: 60px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: var(--shada);
+}
+
+.skyjet .group-2 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -7px;
+  margin-bottom: -23px;
+  margin-left: -5px;
+  aspect-ratio: 0.82;
+}
+
+.skyjet .frame-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 0px 40px 0px 0px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.skyjet .text-wrapper-10 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.skyjet .button-2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 5px;
+}
+
+.skyjet .phone-icon {
+  position: relative;
+  width: 17px;
+  height: 17px;
+  aspect-ratio: 1;
+}
+
+.skyjet .element {
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  position: relative;
+  line-height: normal;
+}
+
+.skyjet .button-3 {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 5px;
+}
+
+.skyjet .vector-6 {
+  position: relative;
+  width: 17px;
+  height: 14px;
+  aspect-ratio: 1.27;
+}
+
+.skyjet .text-wrapper-11 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  transition: color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a.text-wrapper-11:hover {
+  color: #333b8c;
+
+}
+
+
+.skyjet .ph-map-pin-fill {
+  display: flex;
+  width: 17px;
+  height: 17px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.skyjet .vector-7 {
+  position: relative;
+  align-self: stretch;
+  aspect-ratio: 0.79;
+}
+
+.skyjet .frame-9 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.skyjet .div-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+  justify-content: center;
+  gap: 14px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 5px;
+}
+
+.skyjet .text-wrapper-12 {
+  flex: 1;
+  margin-top: -2px;
+  margin-left: -1px;
+  -webkit-text-stroke: 0.5px #676a84;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 400;
+  color: #676a84;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.skyjet .button-4 {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+  justify-content: center;
+  gap: 14px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 5px;
+}
+
+.skyjet .frame-10 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 0px 60px 60px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.skyjet .line {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 2px;
+  margin-top: -2px;
+}
+
+.skyjet .frame-11 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.skyjet .text-wrapper-13 {
+  position: relative;
+  width: fit-content;
+  margin-top: -2px;
+  margin-left: -1px;
+  -webkit-text-stroke: 0.5px #676a85;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 400;
+  color: #676a85;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.skyjet .text-wrapper-14 {
+  position: relative;
+  width: fit-content;
+  margin-top: -2px;
+  -webkit-text-stroke: 0.5px #676a85;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 400;
+  color: #676a85;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.skyjet .button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.skyjet .button-3 {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.skyjet .frame-5 {
+  width: 100%;
+}
+
+.skyjet .union-2 {
+  width: auto;
+  height: 100%;
+  max-width: 279px;
+}
+
+.skyjet .group-2 {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 469px) {
+  .nav-link {
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 16px;
+  }
+
+  .skyjet .logo {
+    width: 203px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 780px) {
+  .header {
+    padding: 12px 18px;
+  }
+
+  .navigation-menu {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .nav-link {
+    margin-left: 26px;
+    margin-right: 26px;
+    /* font-size: 16px; */
+  }
+
+  /* .skyjet .logo {
+    width: 203px;
+    height: 50px;
+  } */
+}
+
+@media (min-width: 980px) {
+  .header {
+    padding: 14px 20px;
+  }
+
+  .navigation-menu {
+    order: 2;
+    margin-top: 0;
+  }
+
+  .phone-button {
+    padding: 18px 10px;
+    order: 3;
+  }
+
+  .nav-link {
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 16px;
+  }
+
+  .skyjet .logo {
+    width: 203px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    padding: 16px 24px;
+  }
+}
+
+@media (max-width: 1439px) {
+
+  .skyjet .frame,
+  .skyjet .frame-2,
+  .skyjet .frame-4,
+  .skyjet .frame-10 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .skyjet.view {
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  /* .skyjet .header {
+    padding-left: 40px;
+    padding-right: 40px;
+  } */
+
+  .skyjet .navigation-menu {
+    /* padding-left: 40px;
+    padding-right: 40px; */
+  }
+
+  .skyjet .truck-skyjet {
+    left: auto;
+    right: 0;
+    max-width: 52%;
+    height: auto;
+  }
+
+  .skyjet .text-wrapper,
+  .skyjet .div,
+  .skyjet .text-wrapper-3,
+  .skyjet .text-wrapper-4,
+  .skyjet .p,
+  .skyjet .SKYJET {
+    max-width: 100%;
+
+  }
+
+  .skyjet .group {
+    right: 0;
+  }
+
+  .skyjet .view-3 {
+    flex-wrap: wrap;
+  }
+
+  .skyjet .frame-11 {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1024px) {
+  .skyjet .frame {
+    min-height: 900px;
+    height: auto;
+    padding-top: 160px;
+  }
+
+  .skyjet.view {
+    width: 100%;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  /* .skyjet .header-top {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  } */
+
+  .skyjet .navigation-menu {
+    /* padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    gap: 24px; */
+  }
+
+  .skyjet .logo {
+    /* width: 170px;
+    height: 42px; */
+  }
+
+  .skyjet .view,
+  .skyjet .view-2 {
+    width: 100%;
+  }
+
+  .skyjet .view {
+    height: auto;
+    min-height: 226px;
+  }
+
+  .skyjet .text-wrapper {
+    max-width: 60%;
+  }
+
+  .skyjet .div {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .skyjet .frame,
+  .skyjet .frame-2,
+  .skyjet .frame-4,
+  .skyjet .frame-10 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .skyjet .frame {
+    gap: 24px;
+    min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+
+  .skyjet .text-wrapper,
+  .skyjet .div {
+    max-width: 100%;
+  }
+
+  .skyjet .text-wrapper {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .skyjet .text-wrapper-3 {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .skyjet .group {
+    display: none;
+  }
+
+  .skyjet .logo {
+    /* width: 140px;
+    height: 35px; */
+    /* flex-shrink: 0; */
+  }
+
+  .skyjet .navigation-menu {
+    /* padding: 0 8px 8px; */
+    /* flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start; */
+  }
+
+  .skyjet .nav-link {
+    /* font-size: 14px; */
+    /* white-space: nowrap; */
+  }
+/* 
+  .skyjet .phone-button {
+    padding: 12px 14px;
+    gap: 10px;
+    font-size: 13px;
+    flex-shrink: 0;
+  } */
+
+  /* .skyjet .button-text {
+    font-size: 13px;
+  }
+
+  .skyjet .phone-icon {
+    width: 14px;
+    height: 14px;
+  } */
+
+  .skyjet .view {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .skyjet .union-2 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .skyjet .frame-6 {
+    display: flex;
+    width: 100%;
+    padding: 0 24px 24px;
+  }
+
+  .skyjet .text-wrapper-5,
+  .skyjet .text-wrapper-6 {
+    width: 100%;
+  }
+
+  .skyjet .view-2 {
+    height: auto;
+    min-height: 180px;
+    padding: 24px;
+  }
+
+  .skyjet .view-3 {
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .skyjet .frame-11 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
