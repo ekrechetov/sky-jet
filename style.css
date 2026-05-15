@@ -22,10 +22,10 @@
 }
 
 .logo {
-  display: flex;
   text-decoration: none;
   width: 170px;
   height: 42px;
+  margin-right: 2px;
   object-fit: contain;
   order: 1; 
 }
@@ -53,263 +53,224 @@
 }
 
 .nav-link:hover {
-  color: #4654f0;
+  color: #5664EE;
   text-decoration: underline;
 }
 
-.phone-button {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 6px;
-  max-height: 34px;
   background-color: #333b8c;
+  color: #ffffff;
   box-shadow: var(--shada);
   border-radius: 5px;
   transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-  text-decoration: none;
   cursor: pointer;
   white-space: nowrap;
+  max-width: 230px;
+  padding: 8px 6px;
+  font-family: "LINE Seed JP", Helvetica;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0;
+  font-weight: 500;
+  align-self: center;
+}
+
+.phone-button {
+  padding: 8px 6px;
+  max-height: 34px;
   order: 2;
 }
 
-.skyjet .button-text {
+.phone-icon {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  aspect-ratio: 1;
+}
+
+.button-text {
   font-family: "LINE Seed JP", Helvetica;
   font-weight: 500;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 12px;
   margin-left: 2px;
 }
 
-.skyjet .frame {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  /* align-items: flex-start; */
-  justify-content: center;
-  gap: 40px;
-  padding: 0px 60px 0px;
-  position: relative;
-  align-self: stretch;
+.phone-button:hover {
+  background-color: #5664EE;
+}
+
+main {
   width: 100%;
 }
 
-.skyjet .truck-skyjet {
-  position: absolute;
-  top: -11.1111vh;
-  right: 0;
-  width: 83vh;
-  height: 117.1111vh;
-  aspect-ratio: 0.92;
-  object-fit: cover;
+.section {
+  display: flex;
+  padding-top: 36px;
 }
 
-.skyjet .text-wrapper {
-  position: relative;
-  width: 707px;
+.hero {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.about {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.services {
+  flex-direction: column;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.section-title {
   font-family: "LINE Seed JP", Helvetica;
   font-weight: 800;
   color: #000000;
-  font-size: 60px;
-  letter-spacing: -3px;
+  font-size: 28px;
   line-height: normal;
+  letter-spacing: -1px;
+  text-wrap: wrap;
 }
 
-.skyjet .div {
-  position: relative;
-  width: 793px;
-  margin-left: -1px;
+.section-description {
+  margin-top: 28px;
+  width: 85%;
+  -webkit-text-stroke: 0.5px #000000;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+.section-subdescription {
+  margin-top: 18px;
+  width: 100%;
   -webkit-text-stroke: 0.5px #000000;
   font-family: "LINE Seed JP", Helvetica;
   font-weight: 400;
   color: #000000;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: 26.6px;
+  font-size: 14px;
+  line-height: normal;    
 }
 
-/* .skyjet .button {
-  all: unset;
-  box-sizing: border-box;
-  display: flex;
-  width: 230px;
-  align-items: center;
-  padding: 16px 18px;
-  background-color: #333b8c;
-  box-shadow: var(--shada);
-  justify-content: center;
-  gap: 14px;
+.img-container {
   position: relative;
-  flex: 0 0 auto;
-  border-radius: 5px;
-  transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 60%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.img-group {
+  display: none;
+}
+
+.section-img {
+  position: absolute;
+  right: 0;
+  object-fit: cover;
+}
+
+.hero-img {
+  margin-top: -40px;
+  width: 100%;
 }
 
 .button:hover {
   background-color: #5664EE;
-} */
+}
 
-.skyjet .text-wrapper-2 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
+.contact-us-button {
+  align-self: center;
+  margin-top: 36px;
   font-family: "LINE Seed JP", Helvetica;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+  min-width: 200px;
 }
 
-a.phone-button:hover {
-  background-color: #5664EE;
-}
+/* About section */
+/* Services section */
 
-.skyjet .frame-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 60px;
-  padding: 130px 60px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
-
-.skyjet .text-wrapper-3 {
-  width: 639px;
-  margin-top: -1px;
-  font-family: "LINE Seed JP", Helvetica;
-  font-weight: 800;
-  color: #000000;
-  font-size: 60px;
-  letter-spacing: -3px;
-  position: relative;
-  line-height: normal;
-}
-
-.skyjet .frame-3 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 40px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.skyjet .p {
-  position: relative;
-  width: 622px;
-  margin-top: -1px;
-  font-family: "LINE Seed JP", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.skyjet .SKYJET {
-  width: 622px;
-  -webkit-text-stroke: 0.5px #000000;
-  color: #000000;
-  position: relative;
-  margin-left: -1px;
-  font-family: "LINE Seed JP", Helvetica;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.skyjet .group {
-  position: absolute;
-  top: calc(50.00% - 272px);
-  right: 0;
-  width: 382px;
-  height: 544px;
-}
-
-.skyjet .union {
-  position: absolute;
-  top: calc(50.00% - 272px);
-  right: 0;
-  width: 99px;
-  height: 544px;
-}
-
-.skyjet .img {
-  position: absolute;
-  top: calc(50.00% - 272px);
-  right: 60px;
-  width: 198px;
-  height: 544px;
-}
-
-.skyjet .frame-4 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 40px;
-  padding: 130px 60px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
-
-.skyjet .text-wrapper-4 {
-  width: 716px;
-  margin-left: -1px;
-  -webkit-text-stroke: 0.5px #000000;
-  font-family: "LINE Seed JP", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 16px;
-  letter-spacing: 0;
-  position: relative;
-  line-height: normal;
-}
-
-.skyjet .frame-5 {
+.card-list {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px 40px;
-  position: relative;
-  flex: 0 0 auto;
+  width: 100%;
+  margin-top: 18px;
+  gap: 12px;
 }
 
-.skyjet .view {
-  width: 44.4444vw;
-  height: 226px;
-  gap: 24px;
-  top: 0px;
+.card {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
   align-items: center;
-  position: relative;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: var(--shada);
-  transition: top 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: background-color 0.2s ease-in-out;
 }
 
-.view:hover {
-  top: -5px;
+.card:hover {
+  background-color: #e6f0f6;
 }
 
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-radius: 8px;
+  height: 100%;
+  max-width: 400px;
+}
 
-.skyjet .union-2 {
-  position: relative;
-  align-self: stretch;
-  aspect-ratio: 1.11;
+.card-title {
+  padding: 10px 8px 6px 8px;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  /* font-size: 24px; */
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+  overflow-wrap: break-word;
+}
+
+.card-description {
+  -webkit-text-stroke: 0.5px #000000;
+  padding: 6px 8px;
+  font-family: "LINE Seed JP", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  /* font-size: 16px; */
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.card-img {
+  border-top-left-radius: 8px;
+  height: 140px;
+  width: auto;
   object-fit: cover;
+  align-self: flex-start;
+}
+
+.order-button {
+  margin: 12px;
+  min-width: 200px;
 }
 
 .skyjet .frame-6 {
@@ -320,40 +281,6 @@ a.phone-button:hover {
   padding: 24px 0px;
   position: relative;
   flex: 0 0 auto;
-}
-
-.skyjet .frame-7 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.skyjet .text-wrapper-5 {
-  width: 336px;
-  margin-top: -1px;
-  font-family: "LINE Seed JP", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: 0;
-  position: relative;
-  line-height: normal;
-}
-
-.skyjet .text-wrapper-6 {
-  width: 313px;
-  margin-left: -1px;
-  -webkit-text-stroke: 0.5px #000000;
-  font-family: "LINE Seed JP", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 16px;
-  letter-spacing: 0;
-  position: relative;
-  line-height: normal;
 }
 
 .skyjet .view-2 {
@@ -457,15 +384,6 @@ a.phone-button:hover {
   box-shadow: var(--shada);
 }
 
-.skyjet .group-2 {
-  position: relative;
-  align-self: stretch;
-  margin-top: -7px;
-  margin-bottom: -23px;
-  margin-left: -5px;
-  aspect-ratio: 0.82;
-}
-
 .skyjet .frame-8 {
   display: flex;
   flex-direction: column;
@@ -497,13 +415,6 @@ a.phone-button:hover {
   position: relative;
   flex: 0 0 auto;
   border-radius: 5px;
-}
-
-.skyjet .phone-icon {
-  position: relative;
-  width: 17px;
-  height: 17px;
-  aspect-ratio: 1;
 }
 
 .skyjet .element {
@@ -556,7 +467,6 @@ a.text-wrapper-11:hover {
   color: #333b8c;
 
 }
-
 
 .skyjet .ph-map-pin-fill {
   display: flex;
@@ -695,55 +605,197 @@ a.text-wrapper-11:hover {
   cursor: pointer;
 }
 
-.skyjet .frame-5 {
-  width: 100%;
-}
+@media (min-width: 470px) {
+  .header {
+    padding: 8px 12px;
+  }
 
-.skyjet .union-2 {
-  width: auto;
-  height: 100%;
-  max-width: 279px;
-}
-
-.skyjet .group-2 {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-}
-
-@media (min-width: 469px) {
   .nav-link {
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 12px;
+    margin-right: 12px;
     font-size: 16px;
   }
 
-  .skyjet .logo {
+  .logo {
     width: 203px;
     height: 50px;
+  }
+
+  .hero {
+    flex-direction: row;
+  }
+
+  .section-content {
+    align-items: flex-start;
+    padding: 8px 12px;
+    /* width: 80%; */
+  }
+
+  .hero .section-content {
+    width: 80%;
+  }
+
+  .about .section-content {
+    width: 100%;
+  }
+
+  .section-description {
+    width: 100%;
+    margin-top: 36px;
+  }
+
+  .section-img {
+    align-self: flex-start;
+  }
+
+  .img-container {
+    width: 55%;
+    align-self: flex-start;
+  }
+
+  .hero-img {
+    width: 100%;
+    margin-top: -28px;
+  }
+
+  .contact-us-button {
+    align-self: flex-start;
+    margin-top: 44px;
+    font-weight: 700;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .card {
+    flex-direction: row;
+    height: 180px;
+  }
+
+  .card-title {
+    padding: 8px 4px;
+  }
+
+  .card-description {
+    padding: 0 6px 0 4px;
+  }
+
+  .card-img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .order-button {
+    margin-top: 4px;
   }
 }
 
 @media (min-width: 780px) {
   .header {
-    padding: 12px 18px;
+    padding: 12px 16px;
+  }
+
+  .phone-icon {
+    width: 17px;
+    height: 17px;
+  }
+
+  .button-text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .contact-us-button {
+    min-width: 230px;
   }
 
   .navigation-menu {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .nav-link {
     margin-left: 26px;
     margin-right: 26px;
-    /* font-size: 16px; */
   }
 
-  /* .skyjet .logo {
-    width: 203px;
-    height: 50px;
-  } */
+  .section {
+    padding-top: 70px;
+  }
+
+  .section-content {
+    width: 80%;
+    padding: 16px;
+  }
+
+  .services .section-content {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 36px;
+
+  }
+
+  .section-description {
+    margin-top: 50px;
+    font-size: 22px;
+    line-height: 22px;
+    width: 95%;
+  }
+
+  .section-subdescription {
+     margin-top: 32px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .section-img {
+    margin-top: -48px;
+  }
+
+  .img-group {
+    display: block;
+    position: relative;
+    width: 25%;
+  }
+
+  .about-img-1 {
+    position: absolute;
+    top: calc(50.00% - 130px);
+    right: 40px;
+    width: auto;
+    height: 80%;
+  }
+
+  .about-img-2 {
+    position: absolute;
+    top: calc(50.00% - 130px);
+    right: 0;
+    width: auto;
+    height: 80%;
+  }
+
+  .card-list {
+    margin-top: 32px;
+    gap: 24px;
+  }
+
+  .card {
+    height: 200px;
+  }
+
+  .card-title {
+    margin-top: 8px;
+    font-size: 20px;
+  }
+
+  .card-description {
+    font-size: 16px;
+  }
+
+  .order-button {
+    margin-bottom: 16px;
+  }
 }
 
 @media (min-width: 980px) {
@@ -757,7 +809,7 @@ a.text-wrapper-11:hover {
   }
 
   .phone-button {
-    padding: 18px 10px;
+    padding: 20px 14px;
     order: 3;
   }
 
@@ -767,230 +819,133 @@ a.text-wrapper-11:hover {
     font-size: 16px;
   }
 
-  .skyjet .logo {
-    width: 203px;
-    height: 50px;
+  .contact-us-button {
+    margin-top: 60px;
+  }
+
+  /* .section {
+    padding: 54px 0 54px 24px;
+  } */
+
+  .section-content {
+    width: 75%;
+    max-width: 700px;
+  }
+
+  .services .section-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .section-title {
+    font-size: 48px;
+  }
+
+  .section-description {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .section-subdescription {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .hero-img {
+    margin-top: -90px;
+  }
+
+  .about-img-1 {
+    top: 50px;
+    height: 100%;
+  }
+
+  .about-img-2 {
+    top: 50px;
+    height: 100%;
+  }
+
+  .card-list {
+    justify-content: space-between;
+    gap: 18px;
+  }
+
+  .card {
+    width: 49%;
+    height: 180px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-description {
+    font-size: 14px;
   }
 }
 
 @media (min-width: 1200px) {
   .header {
-    padding: 16px 24px;
+    padding: 4px 24px;
+  }
+
+  .logo {
+    width: 230px;
+    height: 65px;
+  }
+
+  .nav-link {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .section {
+    padding-top: 70px;
+  }
+
+  /* .section-content {
+    width: 65%;
+  } */
+
+  .section-title {
+    font-size: 54px;
+  }
+
+  .section-description {
+    margin-top: 40px;
+  }
+
+  /* .section-img {
+    top: -120px;
+  } */
+
+  .hero-img {
+    margin-top: -140px;
+  }
+
+  .card {
+    height: 200px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-description {
+    font-size: 16px;
   }
 }
 
-@media (max-width: 1439px) {
-
-  .skyjet .frame,
-  .skyjet .frame-2,
-  .skyjet .frame-4,
-  .skyjet .frame-10 {
-    padding-left: 40px;
-    padding-right: 40px;
+@media (min-width: 1400px) {
+  .img-container {
+    max-width: 40%;
   }
 
-  .skyjet.view {
-    width: 100%;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-
-  /* .skyjet .header {
-    padding-left: 40px;
-    padding-right: 40px;
-  } */
-
-  .skyjet .navigation-menu {
-    /* padding-left: 40px;
-    padding-right: 40px; */
-  }
-
-  .skyjet .truck-skyjet {
-    left: auto;
-    right: 0;
-    max-width: 52%;
-    height: auto;
-  }
-
-  .skyjet .text-wrapper,
-  .skyjet .div,
-  .skyjet .text-wrapper-3,
-  .skyjet .text-wrapper-4,
-  .skyjet .p,
-  .skyjet .SKYJET {
-    max-width: 100%;
-
-  }
-
-  .skyjet .group {
-    right: 0;
-  }
-
-  .skyjet .view-3 {
-    flex-wrap: wrap;
-  }
-
-  .skyjet .frame-11 {
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 1024px) {
-  .skyjet .frame {
-    min-height: 900px;
-    height: auto;
-    padding-top: 160px;
-  }
-
-  .skyjet.view {
-    width: 100%;
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-  /* .skyjet .header-top {
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  } */
-
-  .skyjet .navigation-menu {
-    /* padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 20px;
-    gap: 24px; */
-  }
-
-  .skyjet .logo {
-    /* width: 170px;
-    height: 42px; */
-  }
-
-  .skyjet .view,
-  .skyjet .view-2 {
-    width: 100%;
-  }
-
-  .skyjet .view {
-    height: auto;
-    min-height: 226px;
-  }
-
-  .skyjet .text-wrapper {
-    max-width: 60%;
-  }
-
-  .skyjet .div {
-    max-width: 60%;
-  }
-}
-
-@media (max-width: 767px) {
-  .skyjet .frame,
-  .skyjet .frame-2,
-  .skyjet .frame-4,
-  .skyjet .frame-10 {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .skyjet .frame {
-    gap: 24px;
-    min-height: auto;
-    padding-top: 120px;
-    padding-bottom: 40px;
-  }
-
-  .skyjet .text-wrapper,
-  .skyjet .div {
-    max-width: 100%;
-  }
-
-  .skyjet .text-wrapper {
-    font-size: 42px;
-    letter-spacing: -2px;
-  }
-
-  .skyjet .text-wrapper-3 {
-    font-size: 42px;
-    letter-spacing: -2px;
-  }
-
-  .skyjet .group {
-    display: none;
-  }
-
-  .skyjet .logo {
-    /* width: 140px;
-    height: 35px; */
-    /* flex-shrink: 0; */
-  }
-
-  .skyjet .navigation-menu {
-    /* padding: 0 8px 8px; */
-    /* flex-wrap: wrap;
-    gap: 16px;
-    justify-content: flex-start; */
-  }
-
-  .skyjet .nav-link {
-    /* font-size: 14px; */
-    /* white-space: nowrap; */
-  }
-/* 
-  .skyjet .phone-button {
-    padding: 12px 14px;
-    gap: 10px;
-    font-size: 13px;
-    flex-shrink: 0;
-  } */
-
-  /* .skyjet .button-text {
-    font-size: 13px;
-  }
-
-  .skyjet .phone-icon {
-    width: 14px;
-    height: 14px;
-  } */
-
-  .skyjet .view {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .skyjet .union-2 {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .skyjet .frame-6 {
-    display: flex;
-    width: 100%;
-    padding: 0 24px 24px;
-  }
-
-  .skyjet .text-wrapper-5,
-  .skyjet .text-wrapper-6 {
-    width: 100%;
-  }
-
-  .skyjet .view-2 {
-    height: auto;
-    min-height: 180px;
-    padding: 24px;
-  }
-
-  .skyjet .view-3 {
-    padding: 24px;
-    gap: 24px;
-  }
-
-  .skyjet .frame-11 {
-    flex-direction: column;
-    align-items: flex-start;
+  .hero-img {
+    margin-top: -200px;
   }
 }
