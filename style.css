@@ -269,7 +269,7 @@ main {
 }
 
 .order-button {
-  margin: 12px;
+  margin: 12px 0;
   min-width: 200px;
 }
 
@@ -595,16 +595,6 @@ a.text-wrapper-11:hover {
   white-space: nowrap;
 }
 
-.skyjet .button {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.skyjet .button-3 {
-  text-decoration: none;
-  cursor: pointer;
-}
-
 @media (min-width: 470px) {
   .header {
     padding: 8px 12px;
@@ -654,7 +644,6 @@ a.text-wrapper-11:hover {
   }
 
   .hero-img {
-    width: 100%;
     margin-top: -28px;
   }
 
@@ -686,6 +675,7 @@ a.text-wrapper-11:hover {
 
   .order-button {
     margin-top: 4px;
+    align-self: start;
   }
 }
 
@@ -720,6 +710,7 @@ a.text-wrapper-11:hover {
 
   .section {
     padding-top: 70px;
+    justify-content: space-between
   }
 
   .section-content {
@@ -800,7 +791,7 @@ a.text-wrapper-11:hover {
 
 @media (min-width: 980px) {
   .header {
-    padding: 14px 20px;
+    padding: 14px 24px;
   }
 
   .navigation-menu {
@@ -830,6 +821,8 @@ a.text-wrapper-11:hover {
   .section-content {
     width: 75%;
     max-width: 700px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .services .section-content {
@@ -890,7 +883,7 @@ a.text-wrapper-11:hover {
 
 @media (min-width: 1200px) {
   .header {
-    padding: 4px 24px;
+    padding: 16px 32px;
   }
 
   .logo {
@@ -907,9 +900,10 @@ a.text-wrapper-11:hover {
     padding-top: 70px;
   }
 
-  /* .section-content {
-    width: 65%;
-  } */
+  .section-content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 
   .section-title {
     font-size: 54px;
@@ -919,9 +913,9 @@ a.text-wrapper-11:hover {
     margin-top: 40px;
   }
 
-  /* .section-img {
-    top: -120px;
-  } */
+  .img-container {
+    max-width: 40%;
+  }
 
   .hero-img {
     margin-top: -140px;
@@ -929,6 +923,12 @@ a.text-wrapper-11:hover {
 
   .card {
     height: 200px;
+  }
+
+  .card-content {
+    height: 200px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .card-title {
@@ -941,11 +941,31 @@ a.text-wrapper-11:hover {
 }
 
 @media (min-width: 1400px) {
+  .header {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .nav-link {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .section-content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .img-container {
     max-width: 40%;
+    justify-content: flex-end;
   }
 
   .hero-img {
     margin-top: -200px;
+  }
+
+  .card-list {
+    gap: 26px;
   }
 }
