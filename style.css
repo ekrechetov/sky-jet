@@ -212,8 +212,7 @@ main {
 
 .card {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: flex;  
   width: 100%;
   height: auto;
   align-items: center;
@@ -221,6 +220,10 @@ main {
   border-radius: 8px;
   box-shadow: var(--shada);
   transition: background-color 0.2s ease-in-out;
+}
+
+.service-card {
+  flex-direction: column;
 }
 
 .card:hover {
@@ -268,45 +271,20 @@ main {
   align-self: flex-start;
 }
 
+.advantage-card {
+  flex-direction: row;
+  min-height: 100px;
+  padding: 16px;
+}
+
+.advantage-img {
+  height: 60px;
+  align-self: center;
+}
+
 .order-button {
   margin: 12px 0;
   min-width: 200px;
-}
-
-.skyjet .frame-6 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  padding: 24px 0px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.skyjet .view-2 {
-  width: 28.7vw;
-  height: 226px;
-  justify-content: center;
-  gap: 40px;
-  top: 0px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: var(--shada);
-  transition: top 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.view-2:hover {
-  top: -5px;
-}
-
-.skyjet .vector {
-  position: relative;
-  width: 105px;
-  height: 105px;
-  aspect-ratio: 1;
 }
 
 .skyjet .text-wrapper-7 {
@@ -336,27 +314,6 @@ main {
   line-height: normal;
 }
 
-.skyjet .vector-2 {
-  position: relative;
-  width: 87px;
-  height: 105px;
-  aspect-ratio: 0.83;
-}
-
-.skyjet .vector-3 {
-  position: relative;
-  width: 99px;
-  height: 105px;
-  aspect-ratio: 0.95;
-}
-
-.skyjet .vector-4 {
-  position: relative;
-  width: 105px;
-  height: 84px;
-  aspect-ratio: 1.25;
-}
-
 .skyjet .text-wrapper-9 {
   width: fit-content;
   margin-left: -1px;
@@ -368,20 +325,6 @@ main {
   letter-spacing: 0;
   position: relative;
   line-height: normal;
-}
-
-.skyjet .view-3 {
-  gap: 60px;
-  padding: 60px;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-  position: relative;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: var(--shada);
 }
 
 .skyjet .frame-8 {
@@ -618,7 +561,6 @@ a.text-wrapper-11:hover {
   .section-content {
     align-items: flex-start;
     padding: 8px 12px;
-    /* width: 80%; */
   }
 
   .hero .section-content {
@@ -657,6 +599,9 @@ a.text-wrapper-11:hover {
 
   .card {
     flex-direction: row;
+  }
+
+  .service-card {
     height: 180px;
   }
 
@@ -671,6 +616,18 @@ a.text-wrapper-11:hover {
   .card-img {
     object-fit: cover;
     height: 100%;
+  }
+
+  .advantage-card {
+    min-height: 130px;
+  }
+
+  .advantage-img {
+    height: 60px;
+  }
+
+  .advantage-card .card-content .card-title {
+    margin-top: 0;
   }
 
   .order-button {
@@ -769,10 +726,15 @@ a.text-wrapper-11:hover {
   .card-list {
     margin-top: 32px;
     gap: 24px;
+    justify-content: space-between;
   }
 
-  .card {
+  .service-card {
     height: 200px;
+  }
+
+  .advantage-card {
+    width: 48%;
   }
 
   .card-title {
@@ -813,10 +775,6 @@ a.text-wrapper-11:hover {
   .contact-us-button {
     margin-top: 60px;
   }
-
-  /* .section {
-    padding: 54px 0 54px 24px;
-  } */
 
   .section-content {
     width: 75%;
@@ -867,9 +825,12 @@ a.text-wrapper-11:hover {
     gap: 18px;
   }
 
-  .card {
+  .service-card {
     width: 49%;
-    height: 180px;
+  }
+
+  .advantage-card {
+    width: 32%;
   }
 
   .card-title {
@@ -921,12 +882,11 @@ a.text-wrapper-11:hover {
     margin-top: -140px;
   }
 
-  .card {
+  .service-card {
     height: 200px;
   }
 
   .card-content {
-    height: 200px;
     padding-left: 16px;
     padding-right: 16px;
   }
